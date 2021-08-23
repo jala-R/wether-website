@@ -7,7 +7,7 @@ const express=require("express"),
     geoCoding=require("./utils/geocoding");
     
 
-//toCheck
+const PORT=process.env.PORT||3000;
 //paths
 const PUBLICPATH=path.join(__dirname,"../public"),
     VIEWSPATH=path.join(__dirname,"../templates/hbs"),
@@ -66,6 +66,6 @@ app.get("/*",(req,res)=>{
     res.send("baka 404 bakayaru!!");
 })
 //listerner
-app.listen(3000,()=>{
-    console.log("server listening oon port 3000");
+app.listen(PORT,()=>{
+    console.log(`server listening oon port ${PORT}`);
 })

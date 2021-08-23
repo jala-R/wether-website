@@ -4,7 +4,7 @@ submit.addEventListener("click",(e)=>{
     e.preventDefault();
     let location=input.value;
     input.value="";
-    fetch(`http://localhost:3000/weather?address=${location}`)
+    fetch(`/weather?address=${location}`)
     .then((res)=>{
         return res.json();
     })
