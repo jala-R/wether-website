@@ -7,7 +7,7 @@ const express=require("express"),
     geoCoding=require("./utils/geocoding");
     
 
-
+//toCheck
 //paths
 const PUBLICPATH=path.join(__dirname,"../public"),
     VIEWSPATH=path.join(__dirname,"../templates/hbs"),
